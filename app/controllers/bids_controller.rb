@@ -7,6 +7,8 @@ class BidsController < ApplicationController
       @item = @bid.item
       render "items/show"
     end
+
+    @bid_new = Bid.new(item: @bid.item, amount: @bid.item.next_bid_amount)
   end
 
 
