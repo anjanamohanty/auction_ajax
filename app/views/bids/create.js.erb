@@ -1,1 +1,1 @@
-alert("WOOHOO!");
+$("#bid-form").html("<%= j(render partial: "items/bid", locals: {bid: @bid, item: @bid.item}) %>")
